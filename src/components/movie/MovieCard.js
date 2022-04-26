@@ -8,7 +8,7 @@ const MovieCard = ({ item }) => {
   const navigate = useNavigate();
   if (!item) return null;
   const { title, vote_average, release_date, poster_path, id } = item;
-  // console.log("item", item);
+  console.log("item", item);
   // console.log(title);
   return (
     <div className="movie-card flex flex-col rounded-lg p-3 bg-slate-800 text-white h-full select-none">
@@ -49,7 +49,7 @@ export const MovieCardSkeleton = () => {
         <h3 className="text-xl font-bold mb-3 flex-1">
           <LoadingSkeleton
             width="100%"
-            height="250px"
+            height="100%"
             radius="8px"
             className="mb-5"
           ></LoadingSkeleton>

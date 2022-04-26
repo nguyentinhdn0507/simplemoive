@@ -49,7 +49,6 @@ const MoviePage = () => {
     setItemOffset(newOffset);
     setNextPage(event.selected + 1);
   };
-
   return (
     <div className="py-10 page-container">
       <div className="flex mb-10">
@@ -73,7 +72,7 @@ const MoviePage = () => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
           </svg>

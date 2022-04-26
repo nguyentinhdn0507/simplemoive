@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+
 const HackerNews = () => {
   //https://hn.algolia.com/apo/v1/search?query=react
   const [hits, setHits] = useState([]);
@@ -65,7 +66,6 @@ const HackerNews = () => {
       </div>
     </div>
   );
-  
 };
 
 export default HackerNews;

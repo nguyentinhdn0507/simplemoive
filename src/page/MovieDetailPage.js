@@ -54,10 +54,10 @@ const MovieDetailPage = () => {
     </div>
   );
 };
-function MovieCredit() {
+function MovieCredit({ type = "videos" }) {
   const { movieID } = useParams();
   const { data, error } = useSWR(
-    tmdbAPI.getMovieCredits(movieID, "credits"),
+    tmdbAPI.getMovieCredits(movieID, type),
     fetcher
   );
   console.log("data", data);
@@ -130,7 +130,9 @@ function MovieSimilar() {
   if (!results || results.length <= 0) return null;
   return (
     <div className="py-10">
-      <h2 className="text-3xl font-medium mb-10">Similar movies</h2>
+      <h2 className="text-3xl bg-secondary font-medium p-3 inline-block rounded-[6px] mb-10">
+        Similar movies
+      </h2>
       <div className="movie-list">
         <Swiper grabCursor={"true"} spaceBetween={40} slidesPerView={"auto"}>
           {results.length > 0 &&

@@ -51,14 +51,7 @@ const HackerNewsReducer = () => {
     });
     try {
       const response = await axios.get(state.url);
-      dispatch({
-        type: "SET_DATA",
-        payload: response.data?.hits || [],
-      });
-      dispatch({
-        type: "SET_LOADING",
-        payload: false,
-      });
+      
       // console.log(response.data?.hits);
       // console.log("Có Dữ liệu :", response);
       // console.log(response.data);

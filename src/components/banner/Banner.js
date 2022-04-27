@@ -40,7 +40,9 @@ function BannerItem({ item }) {
           <span className="p-4 border border-white rounded-md">Adventure</span>
           <span className="p-4 border border-white rounded-md">Adventure</span>
         </div>
-        <Button onClick={() => navigate(`/movie/${id}`)}>Watch Now</Button>
+        <Button bgColor="bg-primary" onClick={() => navigate(`/movie/${id}`)}>
+          Watch Now
+        </Button>
         {/* <button className="py-3 px-6 rounded-lg bg-primary text-white font-medium"></button> */}
       </div>
     </div>

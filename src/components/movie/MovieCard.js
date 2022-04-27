@@ -25,7 +25,7 @@ const MovieCard = ({ item }) => {
         </div>
         <Button
           full
-          bgColor="secondary"
+          bgColor="bg-secondary"
           onClick={() => navigate(`/movie/${id}`)}
         >
           watch now

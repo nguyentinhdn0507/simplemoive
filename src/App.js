@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main></Main>}>
             <Route
-              path="/"
+              path="/"y
               element={
                 <>
                   <Banner></Banner>

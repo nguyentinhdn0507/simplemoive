@@ -52,6 +52,5 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.23"
-  },
-  "homepage": "https://nguyentinhdn0507.github.io/simplemoive/"
+  }
 }
